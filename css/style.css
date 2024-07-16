@@ -1,0 +1,217 @@
+body{
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+}
+
+:root{
+    --para-color : rgb(119, 119, 119);
+}
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    place-content: center; */
+    z-index: 9999;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+.loader::after,
+.loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: rotation 2s ease-in-out infinite alternate;
+ }
+.loader::after {
+    border-color: #FF3D00;
+    animation-direction: alternate-reverse;
+}
+  
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 
+
+#home{
+    height: 110vh;
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)) , url('../images/events-heavenly-header.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h2{
+    font-weight: 500;
+    line-height: 72px;
+    font-size: 60px;
+}
+.text p{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    white-space: nowrap;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+.sideBar-Box{
+    background-color: black;
+    /* display: none; */
+}
+.sideBar-Box i{
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    left: 160px;
+    cursor: pointer;
+}
+.sideBar-Box a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-inline: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.5s;
+    font-size: 25px;
+}
+.sideBar-Box a:hover{
+    color: rgba(214, 46, 51, 0.4);
+}
+.sideBar i{
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.sideBar p{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* end of header */
+
+/* section 2 */
+.w-60{
+    width: 60%;
+}
+.qouteHeader{
+    background-color: #e68285;
+    cursor: pointer;
+}
+.qouteHeader h5{
+    font-weight: 500;
+    font-size: 28px;
+}
+.qouteContent{
+    background-color: #CCCCCC;
+}
+.qouteContent p{
+    font-size: 16px;
+    color:rgb(33, 37, 41);
+    margin-bottom: 0;
+}
+.textquote .qouteContent{
+    display: none;
+}
+/* end of section 2 */
+
+/* section 3 */
+#details{
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)) , url('../images/invitation-2508607__340.jpg');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.details-details{
+    border: 1px solid white;
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+}
+/* end of section 3 */
+
+/* section 4 */
+.hhh{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: rgb(68, 68, 68);
+}
+.contact-content h3{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    color: rgb(68, 68, 68);
+}
+.paraColor{
+    color: var(--para-color);
+}
+.paragraph{
+    color: red;
+}
+.social-icons i{
+    border: 1px solid var(--para-color);
+    padding: 10px;
+    margin-inline: 7px;
+    color: var(--para-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.social-icons i:hover {
+    background-color: #d62e33;
+    border-color: #d62e33;
+    color: white;
+}
+.form .form-control{
+    border-radius: 0 !important;
+}
+.form textarea{
+    height: 200px;
+    resize: vertical;
+}
+.form p{
+    font-size: 20px;
+}
+.form #num{
+    color: #d62e33;
+}
+.form button{
+    background-color: #d62e33;
+    color: white;
+    border-radius: 0;
+    padding: 10px 15px;
+    border-color: transparent;
+}
